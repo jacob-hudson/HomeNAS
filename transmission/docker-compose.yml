@@ -1,0 +1,6 @@
+version: '3'
+services:
+  linuxserver-plex:
+    container_name: transmission
+    restart: unless-stopped
+    image: linuxserver/transmission
