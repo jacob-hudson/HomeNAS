@@ -1,0 +1,14 @@
+version: '3'
+
+volumes:
+  opt-splunk-etc:
+  opt-splunk-var:
+
+services:
+  splunk:
+    #build: .
+    hostname: splunk
+    image: jenkins/jenkins:lts
+    ports:
+      - "8080:8080"
+      - "5000:5000"
